@@ -1,0 +1,52 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+frontend/.env.local
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node.js / Next.js
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Generated data and model files
+data/raw/*
+data/processed/*
+data/evaluation/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/evaluation/.gitkeep
+
+*.parquet
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+
+# Test and coverage output
+.coverage
+htmlcov/
